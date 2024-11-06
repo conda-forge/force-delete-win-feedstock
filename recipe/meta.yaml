@@ -11,11 +11,12 @@ source:
 
 build:
   skip: true  # [not win]
-  number: 3
+  number: 4
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
